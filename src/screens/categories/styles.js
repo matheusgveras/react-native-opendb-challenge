@@ -4,4 +4,11 @@ export default StyleSheet.create({
         alignItems: 'stretch',
         justifyContent: 'center',
     },
+    listItemContainer: {
+        paddingTop:15,
+        paddingBottom:15,
+        paddingLeft: 7,
+        backgroundColor:'#ffffff',
+        borderEndColor: '#cccccc'
+    },
 });

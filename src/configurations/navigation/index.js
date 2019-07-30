@@ -27,6 +27,7 @@ const AppNavigator = createStackNavigator({
     TabView: {
         screen: TabNavigator
     }
-});
+},
+{ initialRouteName: 'Welcome' });
 
 export default createAppContainer(AppNavigator);
