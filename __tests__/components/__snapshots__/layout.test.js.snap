@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing layout renders layout loading: false 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#cccccc",
+      "flex": 1,
+    }
+  }
+>
+  <Text>
+    teste
+  </Text>
+</View>
+`;
+
+exports[`testing layout renders layout loading: true 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#cccccc",
+      "flex": 1,
+    }
+  }
+>
+  <Text>
+    Carregando...Carregando...Carregando...Carregando... Carregando...Carregando...Carregando... Carregando... Carregando... Carregando... Carregando... Carregando... Carregando... Carregando... Carregando... Carregando... Carregando... Carregando... Carregando... Carregando... Carregando... Carregando... Carregando...
+  </Text>
+</View>
+`;

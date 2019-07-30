@@ -1,0 +1,113 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders welcome correctly 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#cccccc",
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "alignSelf": "center",
+        "flex": 1,
+        "justifyContent": "center",
+      }
+    }
+  >
+    <Image
+      source={
+        Object {
+          "testUri": "../../../src/resources/images/logo.png",
+        }
+      }
+      style={
+        Object {
+          "alignSelf": "center",
+          "height": 150,
+          "width": 150,
+        }
+      }
+    />
+    <Image
+      source={
+        Object {
+          "testUri": "../../../src/resources/images/logo.png",
+        }
+      }
+      style={
+        Object {
+          "alignSelf": "center",
+          "height": 55,
+          "width": 150,
+        }
+      }
+    />
+  </View>
+  <View>
+    <Text>
+      teste
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`testing screen welcome renders welcome correctly 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#cccccc",
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "alignSelf": "center",
+        "flex": 1,
+        "justifyContent": "center",
+      }
+    }
+  >
+    <Image
+      source={
+        Object {
+          "testUri": "../../../src/resources/images/logo.png",
+        }
+      }
+      style={
+        Object {
+          "alignSelf": "center",
+          "height": 150,
+          "width": 150,
+        }
+      }
+    />
+    <Image
+      source={
+        Object {
+          "testUri": "../../../src/resources/images/logo.png",
+        }
+      }
+      style={
+        Object {
+          "alignSelf": "center",
+          "height": 55,
+          "width": 150,
+        }
+      }
+    />
+  </View>
+  <View>
+    <Text>
+      teste
+    </Text>
+  </View>
+</View>
+`;

@@ -2,10 +2,12 @@ import api from '../../../api';
 
 const Reducer = {
     state: {
-        init: true
+        init: false
     },
     reducers: {
-        setInit (state, init) { return {...state, init }}
+        update(prev, init) {
+            return {...prev, ...init}
+          }
     }
 };
 

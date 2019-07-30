@@ -18,8 +18,6 @@ const Reducer = {
                     const categories = res.data.trivia_categories;
                     console.log('CATEGORIES: ', categories);
                     this.fillCategories(categories)
-                    
-                    
                 });
             } catch (error) {
                 console.log('ERROR: ', error);

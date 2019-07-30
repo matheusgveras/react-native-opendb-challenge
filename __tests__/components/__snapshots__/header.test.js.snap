@@ -1,0 +1,223 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing header component renders header with name and passing props small and title 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#00306B",
+      "flexDirection": "row",
+      "padding": 10,
+      "paddingTop": 50,
+    }
+  }
+>
+  <View
+    style={Object {}}
+  >
+    <View
+      accessible={true}
+      clickable={true}
+      hitSlop={
+        Object {
+          "bottom": 30,
+          "left": 30,
+          "right": 30,
+          "top": 30,
+        }
+      }
+      isTVSelectable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+    >
+      <Text
+        allowFontScaling={false}
+        style={
+          Array [
+            Object {
+              "color": "#fff",
+              "fontSize": 20,
+            },
+            Object {
+              "fontSize": 22,
+            },
+            Object {
+              "fontFamily": "Ionicons",
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+            },
+            Object {},
+          ]
+        }
+      >
+        
+      </Text>
+    </View>
+  </View>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "justifyContent": "center",
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "color": "#fff",
+          "fontSize": 18,
+          "letterSpacing": 0.5,
+          "lineHeight": 40,
+          "paddingHorizontal": 10,
+          "paddingTop": 0,
+          "textAlign": "center",
+        }
+      }
+    >
+      Teste
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`testing header component renders header with name and passing props title 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#FFF",
+      "flexDirection": "row",
+      "padding": 10,
+      "paddingTop": 50,
+    }
+  }
+>
+  <View
+    style={Object {}}
+  >
+    <View
+      accessible={true}
+      clickable={true}
+      hitSlop={
+        Object {
+          "bottom": 30,
+          "left": 30,
+          "right": 30,
+          "top": 30,
+        }
+      }
+      isTVSelectable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+    >
+      <Text
+        allowFontScaling={false}
+        style={
+          Array [
+            Object {
+              "color": "#fff",
+              "fontSize": 20,
+            },
+            Object {
+              "fontSize": 22,
+            },
+            Object {
+              "fontFamily": "Ionicons",
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+            },
+            Object {},
+          ]
+        }
+      >
+        
+      </Text>
+    </View>
+  </View>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "justifyContent": "center",
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "color": "#fff",
+          "fontSize": 22,
+          "letterSpacing": 0.5,
+          "lineHeight": 40,
+          "paddingHorizontal": 10,
+          "paddingTop": 12,
+          "textAlign": "center",
+        }
+      }
+    >
+      Teste
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`testing header component renders header with name and passing props title and remove goBack function 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#FFF",
+      "flexDirection": "row",
+      "padding": 10,
+      "paddingTop": 50,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "justifyContent": "center",
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "color": "#fff",
+          "fontSize": 22,
+          "letterSpacing": 0.5,
+          "lineHeight": 40,
+          "paddingHorizontal": 10,
+          "paddingTop": 12,
+          "textAlign": "center",
+        }
+      }
+    >
+      Teste
+    </Text>
+  </View>
+</View>
+`;

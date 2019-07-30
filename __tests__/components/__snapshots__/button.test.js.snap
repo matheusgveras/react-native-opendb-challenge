@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing button component renders buttom 1`] = `
+<View>
+  <View
+    accessible={true}
+    clickable={true}
+    isTVSelectable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "borderRadius": 5,
+        "height": 42,
+        "justifyContent": "center",
+        "opacity": 1,
+        "paddingHorizontal": 15,
+      }
+    }
+  >
+    <Text>
+      My button
+    </Text>
+  </View>
+</View>
+`;

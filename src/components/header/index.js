@@ -28,7 +28,7 @@ class Header extends Component {
     ]),
     openDrawer: PropTypes.func,
     iconCenter: PropTypes.string,
-    backgroundRange: PropTypes.arrayOf(PropTypes.string),
+   
   }
   static defaultProps = {
     openDrawer: () => {},
@@ -44,7 +44,7 @@ class Header extends Component {
     leftStyle: undefined,
     centerStyle: undefined,
     titleStyle: undefined,
-    backgroundRange: '#ffffff'
+    background: '#ffffff'
   };
   state = {
     background: new Animated.Value(0),
