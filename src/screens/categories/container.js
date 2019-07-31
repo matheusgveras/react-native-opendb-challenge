@@ -10,6 +10,8 @@ import { Layout, ListCategories, Header } from '../../components'
 // Import Styles
 import styles from './styles';
 
+_key = (item, index) => item.id;
+
 class Categories extends Component {
     // static navigationOptions = {
     //     headerMode: 'none'
@@ -29,16 +31,12 @@ class Categories extends Component {
         this.setState({ loading: false })
     }
 
-    async navigateToQuestions (id) {
-        console.log('Iniciou a navegacao para a rota de perguntas', id);
-        let routeName = 'Questions';
-        const resetAction = StackActions.reset({
-            index: 0,
-            actions: [NavigationActions.navigate({ routeName })]
+    async navigateToQuestions(id) {
+        const pushAction = StackActions.push({
+            routeName: 'Questions',
+            params: { categoryId: id },
         });
-        console.log('reset action: ', resetAction);
-
-        this.props.navigation.dispatch(resetAction);
+        this.props.navigation.dispatch(pushAction);
     }
 
     _objectToRender = (item) => (

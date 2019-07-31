@@ -10,5 +10,6 @@ describe("testing effects in categories model", () => {
 
         const todoItem = store.getState().todos.reverse()[0];
         expect(categories.listOfCategories).toBe("testAsync");
+        
     });
 });

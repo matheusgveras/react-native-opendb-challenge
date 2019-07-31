@@ -11,13 +11,13 @@ export default StyleSheet.create({
         justifyContent: 'center',
     },
     logoHeaderSize: {
-        width: 150,
-        height: 150,
+        width: 200,
+        height: 104,
         alignSelf: 'center',
     },
     logoBottomSize: {
-        width: 150,
-        height: 55,
+        width: 200,
+        height: 25,
         alignSelf: 'center',
     }
 });

@@ -8,11 +8,11 @@ import ResultsView from '../../screens/results';
 const TabNavigator = createBottomTabNavigator({
     Categories: CategoriesView,
     Results: ResultsView,
-}, {
-    navigationOptions: {
-        header: null,  
-    }
-});
+    }, {
+        navigationOptions: {
+            header: null,
+        }
+    });
 
 const AppNavigator = createStackNavigator({
     Welcome: {
@@ -26,8 +26,9 @@ const AppNavigator = createStackNavigator({
     },
     TabView: {
         screen: TabNavigator
-    }
-},
-{ initialRouteName: 'Welcome' });
+    }},
+    {
+        initialRouteName: 'Welcome'
+    });
 
 export default createAppContainer(AppNavigator);
