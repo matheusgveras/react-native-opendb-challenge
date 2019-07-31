@@ -1,3 +1,11 @@
+
+# Considerations
+Developer time: 3 days, 8 hour each for developer
+
+# Incomplete Implementations
+Results screen not implemented.
+Tests are included.
+
 # Structure
     .
     ├── ...
@@ -48,5 +56,6 @@ $ react-native run-ios or react-native run-android
 ```
 
 ![](https://media.giphy.com/media/xT8qBq71uHPGIR9S2A/giphy.gif)
+
 
 # Components link:

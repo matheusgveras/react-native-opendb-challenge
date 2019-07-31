@@ -18,11 +18,7 @@ class Questions extends Component {
         super(props)
         this.state = {
             loading: false,
-            showAlert: false,
             initialDifficulty: 'medium',
-            isOpen: false,
-            isDisabled: false,
-            swipeToClose: true,
             sliderValue: 0.3,
             userAnswerForCurrentQuestion: 0,
             optionsAnwsers:[]
@@ -30,11 +26,13 @@ class Questions extends Component {
     }
 
     async setAnswer(userAnswer) {
-        console.log('====> async setAnswer');
         this.setState({ userAnswerForCurrentQuestion: userAnswer });
     }
+
     async confirmAnswer() {
-        console.log('Confirm Answer Payload:', this.props.currentQuestion);
+        //save this progress
+        this.props.saveProgressGame(this.props.currentQuestion);
+        //verify answer to show message
         if (this.props.currentQuestion.correct_answer === this.state.userAnswerForCurrentQuestion) {
             this.refs.successModal.open();
         }
@@ -49,10 +47,11 @@ class Questions extends Component {
         this.setState({optionsAnwsers: this.props.currentQuestion.all_answers})
     }
     async defineCurrentQuestion(data) {
-        console.log('currentQuestion (1) ====>', data);
+        // get default question for category
         await this.props.defineCurrentQuestion(data);
         this.setState({loading:false});
     }
+    
     async componentDidMount() {
         this.setState({loading:true});
         const configuratonForGetQuestions = {
@@ -119,7 +118,8 @@ const mapState = state => ({
     currentQuestion: state.questions.currentQuestion,
     currentDifficulty: state.questions.currentDifficulty,
     currentCategory: state.questions.currentCategory,
-    allQuestionsForDifficulty: state.questions.allQuestionsForDifficulty
+    allQuestionsForDifficulty: state.questions.allQuestionsForDifficulty,
+    currentProgressGame: state.questions.currentProgressGame
 });
 
 const mapDispatch = ({ questions }) => ({
