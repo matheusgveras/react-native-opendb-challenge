@@ -6,6 +6,7 @@ Developer time: 3 days, 8 hour each for developer
 Results screen not implemented.
 Tests are included.
 
+
 # Installation
 
 ```bash
@@ -14,11 +15,19 @@ https://facebook.github.io/react-native/docs/getting-started.html
 ```
 
 ```bash
-git clone https://github.com/matheusgveras/react-native-opendb-challenge.git
+$ git clone https://github.com/matheusgveras/react-native-opendb-challenge.git
 $ cd react-native-opendb-challenge
 $ yarn
 $ react-native run-ios or react-native run-android 
 ```
+#Versions:
+Android: targetSdkVersion = 28
+React Native: 0.60.4
+
+#A third party liberies
+react-native-modalbox
+react-native-pose
+react-native-vector-icons
 
 # Structure
     .
