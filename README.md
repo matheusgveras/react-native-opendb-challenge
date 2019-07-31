@@ -20,14 +20,7 @@ $ cd react-native-opendb-challenge
 $ yarn
 $ react-native run-ios or react-native run-android 
 ```
-# Versions
-Android: targetSdkVersion = 28
-React Native: 0.60.4
 
-# A third party liberies
-react-native-modalbox
-react-native-pose
-react-native-vector-icons
 
 # Structure
     .
@@ -70,3 +63,13 @@ react-native-vector-icons
     └── ...
 
 
+
+
+# Versions
+Android: targetSdkVersion = 28
+React Native: 0.60.4
+
+# A third party liberies
+react-native-modalbox
+react-native-pose
+react-native-vector-icons
