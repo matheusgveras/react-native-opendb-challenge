@@ -56,8 +56,3 @@ $ react-native run-ios or react-native run-android
     └── ...
 
 
-
-![](https://media.giphy.com/media/xT8qBq71uHPGIR9S2A/giphy.gif)
-
-
-# Components link:
