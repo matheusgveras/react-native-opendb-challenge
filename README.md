@@ -9,6 +9,11 @@ Tests are included.
 # Installation
 
 ```bash
+React Native - setup your development environment
+https://facebook.github.io/react-native/docs/getting-started.html 
+```
+
+```bash
 git clone https://github.com/matheusgveras/react-native-opendb-challenge.git
 $ cd react-native-opendb-challenge
 $ yarn
