@@ -10,7 +10,6 @@ import Modal from 'react-native-modalbox';
 
 // Import Styles
 import styles from './styles';
-import { throwStatement } from '@babel/types';
 import { ScrollView } from 'react-native-gesture-handler';
 
 class Questions extends Component {
@@ -33,7 +32,7 @@ class Questions extends Component {
     async confirmAnswer() {
         //save this progress
         this.props.saveProgressGame(this.props.currentQuestion);
-        
+
         if (this.props.isGameOver) {
             var resultOfGetItem = await AsyncStorage.getItem('saveProgressGame');
             var listOfsaveProgressGame = JSON.parse(resultOfGetItem);
@@ -108,6 +107,7 @@ class Questions extends Component {
                         }
                     </View>
                     {/* Modais */}
+                    
                     <Modal swipeToClose={false} coverScreen={true} style={[styles.modal, styles.successModal]} backdrop={false} position={"top"} ref={"successModal"}>
                         <Icon name='ios-checkmark' color={'#fff'} style={{ fontSize: 46 }} />
                         <Text style={[styles.text, styles.titlemodal]}>You're right</Text>
