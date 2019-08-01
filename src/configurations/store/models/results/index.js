@@ -1,6 +1,6 @@
 const Reducer = {
     state: {
-        init: 'eu sou um result'
+        init: ''
     },
     reducers: {
         setInitValue(state, payload) {

@@ -1,6 +1,6 @@
 // Import core
 import React, { Component } from 'react';
-import { View, Image, Text } from 'react-native';
+import { View, Image } from 'react-native';
 import { NavigationActions, StackActions } from 'react-navigation';
 import { FadeUp, FadeDown } from '../../helpers';
 
@@ -19,6 +19,7 @@ class Welcome extends Component {
         }
     }
     componentDidMount() {
+        
         setTimeout(() => this.setState({fade:true}), 70);
         setTimeout(async () => {
             const resetAction = StackActions.reset({

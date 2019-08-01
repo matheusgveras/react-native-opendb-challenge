@@ -1,11 +1,11 @@
 // Import core
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { Text, FlatList, TouchableOpacity, View } from 'react-native';
-import { NavigationActions, StackActions } from 'react-navigation';
+import { Text, FlatList, TouchableOpacity, View, AsyncStorage } from 'react-native';
+import { StackActions } from 'react-navigation';
 
 // Import components
-import { Layout, ListCategories, Header } from '../../components'
+import { Layout, Header } from '../../components'
 
 // Import Styles
 import styles from './styles';
@@ -13,10 +13,6 @@ import styles from './styles';
 _key = (item, index) => item.id;
 
 class Categories extends Component {
-    // static navigationOptions = {
-    //     headerMode: 'none'
-    // }
-
     constructor(props) {
         super(props),
             this.state = {
@@ -25,17 +21,15 @@ class Categories extends Component {
     }
 
     async componentDidMount() {
-        //TODO: Mudar para props.
-        this.setState({ loading: true })
+        //resete progress game
+        var newListOfAnswers = [];
+        AsyncStorage.setItem('saveProgressGame', JSON.stringify(newListOfAnswers));
+        // get new list of categories
         await this.props.asyncfillCategories();
-        this.setState({ loading: false })
     }
 
     async navigateToQuestions(id) {
-        const pushAction = StackActions.push({
-            routeName: 'Questions',
-            params: { categoryId: id },
-        });
+        const pushAction = StackActions.push({routeName: 'Questions',params: { categoryId: id }});
         this.props.navigation.dispatch(pushAction);
     }
 

@@ -2,9 +2,16 @@
 # Considerations
 Developer time: 3 days, 8 hour each for developer
 
+# Known Bugs:
+After answering the 10 questions and showing modal with the results, the game does not restart and if you continue you may get an error.
+
+Results tab not implemented
+
+Missed some tests
+
 # Incomplete Implementations
-Results screen not implemented.
-Tests are included.
+Results screen implemented after 10 questions, but tabScreen results not
+Tests not completed.
 
 
 # Installation
