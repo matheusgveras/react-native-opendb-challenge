@@ -10,8 +10,7 @@ Results tab not implemented
 Missed some tests
 
 # Incomplete Implementations
-Results screen implemented after 10 questions, but tabScreen results not
-Tests not completed.
+Results screen implemented after 10 questions, but tabScreen not
 
 
 # Installation
