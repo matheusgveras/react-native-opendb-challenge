@@ -44,24 +44,24 @@ $ react-native run-ios or react-native run-android
     ├── android   
     ├── ios
     ├── resources
-        ├── android                     # Icons & SplashScreens
-        ├── iOS                         # Icons & SplashScreens  
+        ├── android                      
+        ├── iOS                           
     ├── src
-    │   ├── components                  # Recursos de design / Design 
+    │   ├── components                   
     |       ├── button                  
-    |       ├── button-footer           # Footer Button of Screen
-    |       ├── button-select           # Button tag function
-    |       ├── header                  # Component header of screens
-    |       ├── layout                  # Base Layout of Screens
-    |       ├── list                    # List of categories                
-    │   ├── configurations              # Componentes de tela / Screen compoments
+    |       ├── button-footer           # footer Button of Screen
+    |       ├── button-select           # button tag function
+    |       ├── header                  # component header of screens
+    |       ├── layout                  # base Layout of Screens
+    |       ├── list                    # list of categories                
+    │   ├── configurations              #
     |       ├── api                     # axios configuration
     │       ├── navigations             # react-navigation configurator  
     |       └── store                   # redux rematch configuration 
     │   ├── helpers                     # pose animations helpers
     |       └── animeted                 
     │   ├── resources                   # images / const of layout 
-    │   ├── screens                     # Screens
+    │   ├── screens                     # screens
             ├── welcome                 
             ├── apresentation
             ├── categories
